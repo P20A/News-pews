@@ -35,7 +35,7 @@ body {
     background-color: #535fcb;
 }
 
-.bg-date{
+.bg-date {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -165,10 +165,34 @@ nav {
 }
 
 .menus a {
-    text-decoration: none;
     color: white;
 }
 
+.menus a:hover {
+    color: white !important;
+}
+
+/* ---------------li main---------- */
+/* .li_main ,.li_life ,.li_tec ,.li_vij{
+    position: relative;
+    
+}
+
+.submenu_main ,.submenu_life ,.submenu_tec ,.submenu_vij{
+    background-color: white;
+    height: auto;
+    min-width: 160px;
+    position: absolute;
+    display: none;
+    top: 3vh;
+    border-radius: var(--b-rad-15);
+    transition: all 0.5s ease;
+}
+
+.li_main:hover .submenu_main ,.li_life:hover .submenu_life ,.li_tec:hover .submenu_tec ,.li_vij:hover .submenu_vij  {
+    display: block;
+    top: 5vh;
+} */
 /* ---------------li main---------- */
 .li_main {
     position: relative;
@@ -254,6 +278,7 @@ nav {
     display: block;
     top: 5vh;
 }
+
 
 /* ----------search */
 
@@ -446,8 +471,11 @@ main {
 }
 
 /* ------------------------------------------ */
-.america-news {
-    height: 400px;
+
+@media (min-width:1024px) {
+    .america-news {
+        height: 400px;
+    }
 }
 
 .card {
@@ -459,12 +487,16 @@ main {
 .am-img-b {
     border-radius: var(--b-rad-15);
     overflow: hidden;
-    height: 50%;
     position: relative;
 }
 
 .am-img-b img {
+    transform: scale(1.2);
     transition: all 0.5s ease;
+}
+
+.am-img-b:hover img {
+    transform: scale(1.4);
 }
 
 .am-img-b .badge-holder {
@@ -473,9 +505,7 @@ main {
     right: 15px;
 }
 
-.am-img-b:hover img {
-    transform: scale(1.2);
-}
+
 
 .fs-p {
     font-size: 13px;
@@ -537,9 +567,21 @@ main {
     transform: scale(1.2);
 }
 
+@media (min-width:0px) {
+    .tech-content {
+        width: 55%;
+    }
+}
+
+@media (min-width:768px) {
+    .tech-content {
+        width: 80%;
+    }
+
+}
+
 .tech-content {
     height: 105px;
-    width: 80%;
     background-color: white;
     position: absolute;
     right: 110px;
@@ -584,7 +626,8 @@ main {
     bottom: 0px;
     transition: all 0.5s ease;
 }
-.tech-b-content p{
+
+.tech-b-content p {
     opacity: 0;
     transition: all 0.5s ease;
     font-size: 13px;
@@ -594,6 +637,7 @@ main {
 .tech-b:hover .tech-b-content {
     bottom: 23px;
 }
-.tech-b:hover .tech-b-content p{
+
+.tech-b:hover .tech-b-content p {
     opacity: 1;
 }
