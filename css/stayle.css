@@ -172,8 +172,8 @@ nav {
     color: white !important;
 }
 
-/* ---------------li main---------- */
-/* .li_main ,.li_life ,.li_tec ,.li_vij{
+/* ---------------submenus---------- */
+.li_main ,.li_life ,.li_tec ,.li_vij{
     position: relative;
     
 }
@@ -192,94 +192,7 @@ nav {
 .li_main:hover .submenu_main ,.li_life:hover .submenu_life ,.li_tec:hover .submenu_tec ,.li_vij:hover .submenu_vij  {
     display: block;
     top: 5vh;
-} */
-/* ---------------li main---------- */
-.li_main {
-    position: relative;
 }
-
-.submenu_main {
-    background-color: white;
-    height: auto;
-    min-width: 160px;
-    position: absolute;
-    display: none;
-    top: 10vh;
-    border-radius: var(--b-rad-15);
-    transition: all 0.5s ease;
-}
-
-.li_main:hover .submenu_main {
-    display: block;
-    top: 5vh;
-}
-
-/* -----------------li life----------------- */
-.li_life {
-    position: relative;
-}
-
-.submenu_life {
-    background-color: white;
-    height: auto;
-    min-width: 160px;
-    position: absolute;
-    display: none;
-    top: 10vh;
-    border-radius: var(--b-rad-15);
-    transition: all 0.5s ease;
-}
-
-.li_life:hover .submenu_life {
-    display: block;
-    top: 5vh;
-}
-
-/* ---------------------li tec------------------- */
-
-.li_tec {
-    position: relative;
-}
-
-.submenu_tec {
-    background-color: white;
-    height: auto;
-    min-width: 160px;
-    position: absolute;
-    display: none;
-    top: 10vh;
-    border-radius: var(--b-rad-15);
-    transition: all 0.5s ease;
-}
-
-.li_tec:hover .submenu_tec {
-    display: block;
-    top: 5vh;
-}
-
-/* --------------------li vij------------- */
-
-.li_vij {
-    position: relative;
-}
-
-.submenu_vij {
-    background-color: white;
-    height: auto;
-    min-width: 160px;
-    position: absolute;
-    display: none;
-    top: 10vh;
-    border-radius: var(--b-rad-15);
-    transition: all 0.5s ease;
-}
-
-.li_vij:hover .submenu_vij {
-    display: block;
-    top: 5vh;
-}
-
-
 /* ----------search */
 
 #search_btn {
