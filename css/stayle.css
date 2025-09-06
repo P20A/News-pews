@@ -296,9 +296,10 @@ main {
 }
 
 /* ----------------------break news---------- */
-#break-news{
+#break-news {
     scroll-margin-top: 20vh;
 }
+
 .br-card {
     overflow: hidden;
     height: 280px;
@@ -443,9 +444,10 @@ main {
 }
 
 /* --------------------------america news---------------- */
-#america-news{
+#america-news {
     scroll-margin-top: 19vh;
 }
+
 @media (min-width:1024px) {
     .america-news {
         height: 400px;
@@ -528,9 +530,10 @@ main {
 }
 
 /* -----------------------------tech news */
-#tech-news{
+#tech-news {
     scroll-margin-top: 19vh;
 }
+
 .tech-side-news {
     height: 140px;
     display: flex;
@@ -629,9 +632,10 @@ main {
 }
 
 /* ------------------------latest news */
-#latest-news{
+#latest-news {
     scroll-margin-top: 19vh;
 }
+
 .latest-news .col-9 .col-12 {
     height: 200px;
     display: flex;
@@ -970,8 +974,11 @@ main {
 footer {
     width: 100%;
     background-color: #ffffff;
+}
+
+footer .container {
     padding: 30px;
-    padding-right: 150px;
+    padding-right: 10%;
 }
 
 .about-us h6 {
@@ -1001,6 +1008,7 @@ footer .quick-access h6 {
     padding-right: 15px;
     border-right: 3px solid #EF233C;
 }
+
 footer .quick-access .quick-access-list {
     list-style-type: none;
     padding: 15px;
@@ -1029,11 +1037,27 @@ footer .category .category-list {
     padding-top: 5px;
     margin: 0;
 }
-
-footer .category .category-item {
-    margin: 5px 0;
+footer .category .category-item a {
+    font-size: 14px;
+    color: #888888;
 }
 
-footer .category .category-item a {
-    color: #888888;
+footer .credits {
+    width: 100%;
+    background-color: #EF233C;
+    padding: 15px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .credits h6{
+    margin: 0 !important;
+}
+footer .credits a{
+    background-color: #f23b50;
+    transition: all 0.3s ease-in-out;
+}
+footer .credits a:hover{
+    background-color: #a81324;
+    color: #fff !important ;
 }
