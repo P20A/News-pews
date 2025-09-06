@@ -1037,6 +1037,7 @@ footer .category .category-list {
     padding-top: 5px;
     margin: 0;
 }
+
 footer .category .category-item a {
     font-size: 14px;
     color: #888888;
@@ -1050,14 +1051,33 @@ footer .credits {
     align-items: center;
     justify-content: space-between;
 }
-footer .credits h6{
+
+footer .credits h6 {
     margin: 0 !important;
 }
-footer .credits a{
+
+footer .credits a {
     background-color: #f23b50;
     transition: all 0.3s ease-in-out;
 }
-footer .credits a:hover{
+
+footer .credits a:hover {
     background-color: #a81324;
-    color: #fff !important ;
+    color: #fff !important;
+}
+
+/* -----------------------------------------------back to top btn -------------*/
+.back-to-top {
+    position: fixed;
+    bottom: 9%;
+    z-index: 1000000;
+    left: 3%;
+    background-color: #EF233C;
+    padding: 6px;
+}
+
+.back-to-top .fa-arrow-up {
+    width: 28px;
+    height: 25px;
+    color: #fff;
 }
